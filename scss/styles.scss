@@ -1,0 +1,187 @@
+@import 'variables';
+*{box-sizing: border-box;
+}
+.slider {
+width: 95%;
+margin:auto;
+overflow: hidden;
+
+}
+.slider ul {
+display: flex;
+padding: 0;
+width: 400%;
+animation: cambio 20s infinite;
+animation-direction: alternate;
+animation-timing-function: ease-in;
+}
+
+.slider li {
+width: 50%;
+list-style: none;
+}
+.slider img{
+width: 50%;
+}
+@keyframes cambio{
+0%{ margin-left: 0;}
+20%{margin-left: 0;}
+
+25%{margin-left: -100%;}
+45%{margin-left: -100%;}
+
+50%{margin-left: -200%;}
+70%{margin-left: -200%;}
+
+75%{margin-left: -300%;}
+100%{margin-left: -300%;}
+}
+
+
+
+body{
+font-family:'Roboto',sans-serif;
+margin: 0;
+background-color: $color-primario;
+
+}
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+li{font-size: 1.25em;}
+
+button{
+font-size: 1.5em; 
+font-weight: bold;
+padding: 20px 30px;
+border-radius: 10px;
+border: 1px solid $caja1; 
+box-shadow:2px 2px 10px $color-sombra;
+color: $white;
+background-color:$color-primario;
+}
+
+button:hover{
+background-color: $over-color;
+color: $color-sombra;
+
+}
+.container{
+max-width: 1400px;
+margin:auto;
+}
+.color-acento{
+color: $white;
+}
+header{
+background-color: $white;
+}
+
+header .logo{
+margin: 0;
+padding: 25px 30px; 
+font-weight: bold;
+color: $color-sombra;
+font-size: .80em;
+}
+#explorador-tienda{
+border: $color-primario;
+}
+
+header .container{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+header nav{
+display: flex;
+flex-direction: column;
+text-align: center;
+padding-bottom: 60px;
+}
+header a{
+padding: 5px 12px;
+text-decoration: none;
+font-weight: bold;
+color: $color-sombra;
+}
+
+#hero{
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+flex-direction: column;
+height: 90vh;
+color: $white;
+background-image: linear-gradient(
+0deg,
+$color-sombra
+$color-primario
+)
+,url('media/.logo.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+
+}
+#hero h1{
+color: $white;
+
+}
+#somos-ToyShop .container{
+text-align: center;
+padding: 200px 12px;
+}
+#nuestros-productos{
+background-color:$co;
+color: $white;
+text-align: center;
+}
+#nuestros-productos .container{
+padding: 200px 12px;
+}
+#nuestro-productos h2{
+margin-top: 0;
+}
+
+#nuestros-productos p{
+display: none;
+
+}
+
+.carta:first-child{
+background-image: linear-gradient(
+0deg,
+$white,
+$white)
+
+,url('media/.logo.jpeg');
+
+
+}
+
+.carta:nth-child(2){
+background-image: linear-gradient(
+0deg,
+$white,
+$white
+)
+,url('media/.logo.jpeg');
+
+}
+.carta:nth-child(3){
+
+background-image: linear-gradient(
+0deg,
+$white,
+$white
+)
+,url('media/.logo.jpeg');
+}
+footer{
+background-color: $white;
+}
